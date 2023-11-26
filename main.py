@@ -8,6 +8,7 @@ my_screen.title("The snake game")
 snake = Turtle("square")
 snake.color("white")
 snake.shapesize(stretch_len=3)
+while game_on
 
 
 
