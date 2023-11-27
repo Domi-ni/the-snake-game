@@ -27,9 +27,7 @@ class Snake:
         segment = Turtle(shape="square")
         segment.color("white")
         segment.penup()
-        x_position = self.segments[len(self.segments) - 1].xcor()
-        y_position = self.segments[len(self.segments) - 1].ycor()
-        segment.goto(x=x_position, y=y_position)
+        segment.goto(self.segments[len(self.segments) - 1].position())
         self.segments.append(segment)
 
     def move_snake(self):

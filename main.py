@@ -32,4 +32,8 @@ while game_is_on:
         snake.new_segment()
         score_board.increase_score()
 
+    if snake.head.xcor() > 285 or snake.head.xcor() < -300 or snake.head.ycor() > 300 or snake.head.ycor() < -285:
+        game_is_on = False
+        score_board.game_over()
+
 my_screen.exitonclick()
