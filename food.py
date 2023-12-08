@@ -6,6 +6,7 @@ class Food(Turtle):
     x_position = random.randint(-275, 275)
     y_position = random.randint(-275, 275)
     random_location = (x_position, y_position)
+
     def __init__(self):
         super().__init__()
         self.shape("circle")
